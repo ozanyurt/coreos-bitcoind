@@ -1,7 +1,7 @@
 FROM alpine:3.2
 MAINTAINER Olivier Lalonde <olalonde@gmail.com>
 
-ENV BITCOIN_VERSION 0.11.1
+ENV BITCOIN_VERSION 0.11.2
 
 # install common packages
 RUN apk add --update-cache \

@@ -28,7 +28,7 @@ apk add --update-cache \
   protobuf-dev \
   chrpath
 
-get_src 6b238ab46bb10c7a83237dfd69b09c95f08043bbe0b478f9c256b9536186b8d2 "https://github.com/bitcoin/bitcoin/archive/v${BITCOIN_VERSION}.tar.gz"
+get_src aab2cd0c4f045970d259cf9fcee5785b43180d20ccbbedc1f90480e697696b25 "https://github.com/bitcoin/bitcoin/archive/v${BITCOIN_VERSION}.tar.gz"
 
 # build bitcoin
 cd "${BUILD_PATH}/bitcoin-${BITCOIN_VERSION}"
