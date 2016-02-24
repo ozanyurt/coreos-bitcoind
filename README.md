@@ -1,3 +1,15 @@
+
+# How to build
+```bash
+docker build -t ozanyurt/bitcoind#{version} .
+```
+```bash
+mkdir /data/bitcoin/livenet
+```
+```bash
+docker run   -v /data/bitcoin/livenet:/bitcoin -d --name=bitcoind -p 8333:8333   -p 8332:8332   -e BITCOIN_CONF_SERVER=1  -e txindex=1  -e BITCOIN_CONF_TXINDEX=1 -e rpcallowip=0.0.0.0/0 -e BITCOIN_CONF_RPCALLOWIP=0.0.0.0/0  -e BITCOIN_CONF_TXINDEX=1  -e BITCOIN_CONF_RPCUSER=bitcointestnet  -e BITCOIN_CONF_RPCPASSWORD=bitcointestnetp ozanyurt/bitcoind.0.12.0
+```
+
 # coreos-bitcoind
 
 coreos-bitcoind is an [automatically built Docker image for
