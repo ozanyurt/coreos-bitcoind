@@ -12,6 +12,7 @@ RUN apk add --update-cache \
   openssl \
   protobuf \
   boost-program_options \
+  libevent-dev \
   db \
   db-c++ \
   && rm -rf /var/cache/apk/*
